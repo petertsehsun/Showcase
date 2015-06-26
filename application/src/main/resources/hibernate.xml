@@ -34,7 +34,6 @@
 		<property name="acquireIncrement" value="1" />
 		<property name="minPoolSize" value="4" />
 <!--		<property name="maxPoolSize" value="${connection_pool_size}" /> -->
-		<property name="maxPoolSize" value="${connection_pool_size}"/> 
 <!-- 		<property name="maxIdleTime" value="30" /> -->
 <!-- 		<property name="maxConnectionAge" value="180" /> -->
 		<!-- <property name="debugUnreturnedConnectionStackTraces" value="true" 
@@ -65,8 +64,8 @@
 				<prop key="hibernate.dialect">${jdbc.hibernate.dialect}</prop>
 <!-- 				<prop key="hibernate.max_fetch_depth">4</prop> -->
 				<!-- <prop key="hibernate.connection.release_mode">after_statement</prop> -->
-				<prop key="hibernate.cache.use_second_level_cache">true</prop>
-				<prop key="hibernate.cache.use_query_cache">true</prop>
+				<prop key="hibernate.cache.use_second_level_cache">false</prop>
+				<prop key="hibernate.cache.use_query_cache">false</prop>
 				<prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory</prop>
 				<prop key="hibernate.cache.provider_configuration_file_resource_path">classpath:ehcache.xml</prop>
 <!-- 				<prop key="hibernate.generate_statistics">true</prop> -->

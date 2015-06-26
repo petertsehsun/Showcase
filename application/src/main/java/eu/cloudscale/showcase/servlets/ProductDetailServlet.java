@@ -20,7 +20,7 @@ import eu.cloudscale.showcase.db.model.IItem;
 public class ProductDetailServlet extends AController
 {
 	
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(value = "", method = RequestMethod.GET)
 	public String get(
 					@RequestParam(value= "I_ID", required=false) Integer itemId,
 					@RequestParam(value = "C_ID", required=false ) Integer customerId,

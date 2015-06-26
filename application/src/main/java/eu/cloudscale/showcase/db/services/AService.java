@@ -36,7 +36,7 @@ import eu.cloudscale.showcase.db.model.IShoppingCart;
 import eu.cloudscale.showcase.db.model.IShoppingCartLine;
 import eu.cloudscale.showcase.db.model.hibernate.ShoppingCart;
 @Transactional(readOnly=true)
-public abstract class AService implements IService
+public class AService implements IService
 {	
 	@Autowired
     protected IAddressDao addressDao;

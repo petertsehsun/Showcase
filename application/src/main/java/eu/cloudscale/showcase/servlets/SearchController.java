@@ -17,7 +17,7 @@ import eu.cloudscale.showcase.db.common.DatabaseHelper;
 public class SearchController extends AController
 {
 	
-	@RequestMapping( method=RequestMethod.GET )
+	@RequestMapping(value = "", method=RequestMethod.GET )
 	public String get(HttpServletRequest request, Model model)
 	{
 	

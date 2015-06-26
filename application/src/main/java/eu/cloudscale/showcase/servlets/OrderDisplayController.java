@@ -20,7 +20,7 @@ import eu.cloudscale.showcase.db.model.IOrders;
 public class OrderDisplayController extends AController
 {
 	@SuppressWarnings( {"unchecked", "rawtypes" } )
-    @RequestMapping(method=RequestMethod.GET)
+    @RequestMapping(value = "", method=RequestMethod.GET)
 	public String get(HttpServletRequest request, Model model)
 	{
 		HttpSession session = super.getHttpSession(OrderDisplayController.class, request);

@@ -19,7 +19,7 @@ import org.springframework.ui.Model;
 import eu.cloudscale.showcase.db.common.DatabaseHelper;
 import eu.cloudscale.showcase.db.services.IService;
 
-public abstract class AController
+public class AController
 {
 	
 	@Autowired

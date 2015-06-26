@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class OrderInquiryController extends AController
 {
 
-	@RequestMapping( method = RequestMethod.GET )
+	@RequestMapping(value = "", method = RequestMethod.GET )
 	public String get(HttpServletRequest request, Model model)
 	{
 		HttpSession session = super.getHttpSession(OrderInquiryController.class, request);
