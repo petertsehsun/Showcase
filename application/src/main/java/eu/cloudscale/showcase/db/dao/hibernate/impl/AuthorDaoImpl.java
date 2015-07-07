@@ -57,7 +57,7 @@ public class AuthorDaoImpl extends DaoImpl<IAuthor> implements IAuthorDao
 	    query.setParameter( "keyword", keyword );
 	    query.setMaxResults( 50 );
 	    
-	    List res = (List<Author>) query.list();
+	    List res = (List<Author>) query.setCacheable(true).list();
 	    
 	    return res;
     }

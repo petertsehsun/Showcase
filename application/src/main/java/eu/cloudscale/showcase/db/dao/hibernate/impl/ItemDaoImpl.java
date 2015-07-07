@@ -141,7 +141,7 @@ public class ItemDaoImpl extends DaoImpl<IItem> implements IItemDao
 		query.setMaxResults( 50 );
 		ArrayList<IItem> newProducts = new ArrayList<IItem>();
 
-		List<Object[]> res = query.list();
+		List<Object[]> res = query.setCacheable(true).list();
 		for ( int i = 0; i < res.size(); i++ )
 		{
 			newProducts.add( (Item) ( res.get( i )[0] ) );
